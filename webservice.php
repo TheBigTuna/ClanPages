@@ -2,7 +2,7 @@
 
 $server_location="localhost";
 $user="ndh175_admin";
-$password="Silver12";
+$password="";
 $db_name="ndh175_clanpages";
 
 $conn = mysqli_connect($server_location, $user, $password, $db_name);
