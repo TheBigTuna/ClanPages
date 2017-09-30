@@ -1,10 +1,8 @@
 <?php
-$server_location="localhost";
-$user="ndh175_admin";
-$password="Silver12";
-$db_name="ndh175_ou_life";
+  // Load configuration as an array. Use the actual location of your configuration file
+  $config = parse_ini_file('config.ini');
 
-  $conn = mysqli_connect($server_location, $user, $password, $db_name);
+  $conn = mysqli_connect($config['server_location'], $config['user'], $config['password'], $config['db_name']);
 
   if (!$conn) {
     die("Connection Failed" . mysqli_connect_error());
