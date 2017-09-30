@@ -1,4 +1,4 @@
-<?php include "nav.jsp" ?>
+<?php include "nav.php" ?>
 
 <div class="container jumbotron text-center">
 	<div class="">
@@ -73,4 +73,4 @@
 
 	</div>
 </div>
-<?php include "fullProfileModal.jsp" ?>
+<?php include "fullProfileModal.php" ?>
