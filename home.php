@@ -5,7 +5,6 @@
 <body>
 
 	<?php include "partials/body.php" ?>
-
 	<?php include "partials/foot.php" ?>
 
 </body>
