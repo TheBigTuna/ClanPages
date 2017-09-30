@@ -1,6 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
-<jsp:include page="nav.jsp" />
+<?php include "nav.jsp" ?>
 
 <div class="container jumbotron text-center">
 	<div class="">
@@ -37,14 +35,15 @@
 
 <div class="container">
 
-	<%
-		int counter = 0;
-		int numOfCols = 3;
-		int rowCount = 0;
-	%>
+	<?php
+		$counter = 0;
+		$numOfCols = 3;
+		$rowCount = 0;
+	?>
 
 	<div class="row justify-content-center">
-		<c:forEach items="${personList}" var="person" varStatus="loopCount">
+		//todo make call
+		<?php for($i=1;$i<3;$i++) { ?>
 			<div class="col-lg-4 col-md-12 profile-col">
 				<div class="media" data-toggle="modal" data-target="#basicExample">
 					<img class="d-flex align-self-center mr-3 rounded"
@@ -63,16 +62,15 @@
 			</div>
 			<!-- col -->
 
-			<%
-					counter++;
-					rowCount++;
-					if (rowCount % numOfCols == 0) {
-						out.write("</div><div class='row justify-content-center'>");
-					};
-			%>
-
-		</c:forEach>
+			<?php
+					$counter++;
+					$rowCount++;
+					if ($rowCount % $numOfCols == 0) {
+						echo ("</div><div class='row justify-content-center'>");
+					}
+			}
+			?>
 
 	</div>
 </div>
-<jsp:include page="fullProfileModal.jsp" />
+<?php include "fullProfileModal.jsp" ?>
