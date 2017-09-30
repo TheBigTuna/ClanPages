@@ -2,7 +2,7 @@
 
 $server_location="localhost";
 $user="ndh175_admin";
-$password="";
+$password="Silver12";
 $db_name="ndh175_clanpages";
 
 $conn = mysqli_connect($server_location, $user, $password, $db_name);
@@ -14,7 +14,7 @@ if (mysqli_connect_errno())
 }
 
 // This SQL statement selects ALL from the table 'Locations'
-$sql = "SELECT * FROM restaurants";
+$sql = "SELECT * FROM user";
 
 // Check if there are results
 if ($result = mysqli_query($conn, $sql))
