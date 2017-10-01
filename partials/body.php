@@ -1,4 +1,5 @@
 <?php include "nav.php" ?>
+<?php include dirname(__FILE__) . "/../db_operations.php" ?>
 
 <div class="container jumbotron text-center">
 	<div class="">
@@ -39,20 +40,32 @@
 		$counter = 0;
 		$numOfCols = 3;
 		$rowCount = 0;
+
+		$result = db_select("SELECT * FROM users");
+		if ($result == false) {
+			$error = db_error();
+		} else {
+
+		}
+
+
+
 	?>
 
 	<div class="row justify-content-center">
-		//todo make call
-		<?php for($i=1;$i<3;$i++) { ?>
+		<?php
+		if (is_array($result) || is_object($result))
+		{
+		foreach($result as $row) { ?>
 			<div class="col-lg-4 col-md-12 profile-col">
 				<div class="media" data-toggle="modal" data-target="#basicExample">
 					<img class="d-flex align-self-center mr-3 rounded"
 						src="http://lorempixel.com/80/80/people/<%=counter%>"
 						alt="Generic placeholder image">
 					<div class="media-body">
-						<h5 class="mt-2 mb-2">${person.name}</h5>
-						<h6>${headlines[loopCount.index]}</h6>
-						<h6 class="mb-0">${locations[loopCount.index]}</h6>
+						<h5 class="mt-2 mb-2"><?php echo($row['user_name']) ?></h5>
+						<h6><?php echo($row['user_name']) ?></h6>
+						<h6 class="mb-0"><?php echo($row['user_name']) ?></h6>
 						<a href="#" class="pull-right" style="font-size: 0.8rem;">More
 							Info &rarr;</a>
 					</div>
@@ -68,7 +81,7 @@
 					if ($rowCount % $numOfCols == 0) {
 						echo ("</div><div class='row justify-content-center'>");
 					}
-			}
+			}}
 			?>
 
 	</div>

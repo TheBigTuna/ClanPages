@@ -2,7 +2,6 @@
 <html>
 <?php
 	include "partials/head.php"
- 	include "db_operations.php"
 ?>
 
 <body>

@@ -8,12 +8,12 @@
         // Try and connect to the database, if a connection has not been established yet
         if(!isset($connection)) {
              // Load configuration as an array. Use the actual location of your configuration file
-            $config = parse_ini_file('../config.ini');
-            $connection = mysqli_connect('localhost',$config['username'],$config['password'],$config['dbname']);
+            $config = parse_ini_file('config.ini');
+            $connection = mysqli_connect('localhost',$config['username'],$config['password'],$config['db_name']);
         }
 
         // If connection was not successful, handle the error
-        if($connection === false) {
+        if($connection == false) {
             // Handle error - notify administrator, log to a file, show an error screen, etc.
             return mysqli_connect_error();
         }
@@ -25,7 +25,7 @@
         $connection = db_connect();
 
         // Query the database
-        $result = mysqli_query($connection,$query);
+        $result = mysqli_query($connection, $query);
 
         return $result;
     }
@@ -36,19 +36,22 @@
     }
     //Selecting rows from db
     function db_select($query) {
-        $rows = array();
+        $tempArray = array();
+        $resultArray = array();
         $result = db_query($query);
 
         // If query failed, return `false`
-        if($result === false) {
+        if($result == false) {
             return false;
         }
 
         // If query was successful, retrieve all the rows into an array
         while ($row = mysqli_fetch_assoc($result)) {
-            $rows[] = $row;
+            $tempArray = $row;
+            array_push($resultArray, $tempArray);
         }
-        return $rows;
+        echo($resultArray);
+        return $resultArray;
     }
 
     function db_quote($value) {
