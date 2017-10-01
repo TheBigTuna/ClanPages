@@ -86,4 +86,4 @@
 
 	</div>
 </div>
-<?php include "fullProfileModal.php" ?>
+<?php include "full-profile-modal.php" ?>

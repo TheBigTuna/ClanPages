@@ -30,8 +30,6 @@
 		    $error = db_error();
 		    // Handle error - inform administrator, log to file, show error page, etc.
 		}
-
-
 	?>
 
 </body>

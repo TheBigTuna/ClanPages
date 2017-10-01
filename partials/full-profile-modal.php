@@ -9,7 +9,7 @@
 				<h4 class="modal-title w-100" id="myModalLabel">Modal title</h4>
 				<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
-					<span aria-hidden="true">×</span>
+					<span aria-hidden="true">ï¿½</span>
 				</button>
 			</div>
 			<!--Body-->
@@ -45,7 +45,7 @@
 			<div class="modal-footer">
 					<button type="button" class="close" data-dismiss="modal"
 					aria-label="Close">
-					<span aria-hidden="true">×</span>
+					<span aria-hidden="true">ï¿½</span>
 				</button>
 			</div>
 		</div>
