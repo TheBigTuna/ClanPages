@@ -42,16 +42,16 @@ role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 
 		</div>
 		<!--Footer-->
-		<div class="modal-footer">
+		<div class="modal-footer text-center">
 			<a href ="https://twitter.com/"><i class="fa fa-twitter circle text-success"></i></a>
 			<a href ="https://www.facebook.com/"><i class="fa fa-facebook circle text-success"></i></a>
 			<a href ="https://plus.google.com/"><i class="fa fa-google-plus circle text-success"></i></a>
 			<a href ="https://dribbble.com/"><i class="fa fa-dribbble circle text-success"></i></a>
 			<a href ="https://www.pinterest.com/"><i class="fa fa-pinterest circle text-success"></i></a>
 			<a href ="https://www.youtube.com/"><i class="fa fa-youtube circle text-success"></i></a>
-			<button type="button" class="close" data-dismiss="modal"
+			<button type="button pull-right" class="close" data-dismiss="modal"
 			aria-label="Close">
-			<span aria-hidden="true">�</span>
+			<span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span>
 		</button>
 	</div>
 </div>
