@@ -1,6 +1,6 @@
 <head>
 <meta name="viewport" content="initial-scale=1">
-<title id="head_title">THIS</title>
+<title id="head_title"></title>
 <!-- Bootstrap 3.3.7 -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 <!-- Fontawesome -->
