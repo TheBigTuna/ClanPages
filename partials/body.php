@@ -1,6 +1,13 @@
 <?php include "nav.php" ?>
 <?php include dirname(__FILE__) . "/../db_operations.php" ?>
 
+<?php
+	$link = $_SERVER['PHP_SELF'];
+	$link_array = explode('/',$link);
+	echo $page = end($link_array);
+	$result = db_select("SELECT clan_name FROM clans WHERE clan_name=")
+?>
+
 <div class="container jumbotron text-center">
 	<div class="">
 		<div class="text-center">
@@ -43,9 +50,7 @@
 
 		$result = db_select("SELECT * FROM users");
 		if ($result == false) {
-			$error = db_error();
-		} else {
-
+			//$error = db_error();
 		}
 	?>
 
@@ -56,10 +61,8 @@
 		foreach($result as $row) { ?>
 			<div class="col-lg-4 col-md-12 profile-col">
 				<div class="media" data-toggle="modal" data-target="#basicExample">
-					<img class="d-flex align-self-center mr-3 rounded" width="80px" height="80px"
-						src= "<?php echo($row['user_profile_url'])?>"
 					<img class="d-flex align-self-center mr-3 rounded" width="80" height="80"
-						src="../../<?php echo($row['user_profile_url'])?>"
+						src="<?php echo($row['user_profile_url'])?>"
 						alt="Generic placeholder image">
 					<div class="media-body">
 						<h5 class="mt-2 mb-2"><?php echo($row['user_name']) ?></h5>

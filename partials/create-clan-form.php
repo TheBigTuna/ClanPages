@@ -3,7 +3,7 @@
 <div class="container jumbotron">
     <h3 class="text-center" style="margin-top:-1rem">Create Your Clan</h3>
     <hr style="margin-bottom:2.5rem">
-    <form class="container mt-4" id="needs-validation" novalidate action="clan.php">
+    <form class="container mt-4" id="needs-validation" novalidate action="grizzhacks.php">
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="validationCustom01">Clan name</label>
