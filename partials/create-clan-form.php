@@ -3,7 +3,11 @@
 <div class="container jumbotron">
     <h3 class="text-center" style="margin-top:-1rem">Create Your Clan</h3>
     <hr style="margin-bottom:2.5rem">
+<<<<<<< HEAD
     <form class="container mt-4" id="needs-validation" novalidate action="register_clan.php" method="post" enctype="multipart/form-data">
+=======
+    <form class="container mt-4" id="needs-validation" novalidate action="register_clan.php" method="post">
+>>>>>>> 28b73743e8f309b087d8715f3391749a5ab4964d
         <div class="row">
             <div class="col-md-6 mb-3">
                 <label for="validationCustom01">Clan name</label>
