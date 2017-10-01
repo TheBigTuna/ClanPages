@@ -60,12 +60,12 @@
 			<div class="col-lg-4 col-md-12 profile-col">
 				<div class="media" data-toggle="modal" data-target="#basicExample">
 					<img class="d-flex align-self-center mr-3 rounded"
-						src="http://lorempixel.com/80/80/people/<%=counter%>"
+						src="../../<?php echo($row['user_profile_url'])?>"
 						alt="Generic placeholder image">
 					<div class="media-body">
 						<h5 class="mt-2 mb-2"><?php echo($row['user_name']) ?></h5>
-						<h6><?php echo($row['user_name']) ?></h6>
-						<h6 class="mb-0"><?php echo($row['user_name']) ?></h6>
+						<h6><?php echo($row['user_location']) ?></h6>
+						<h6 class="mb-0"><?php echo($row['user_major']) ?></h6>
 						<a href="#" class="pull-right" style="font-size: 0.8rem;">More
 							Info &rarr;</a>
 					</div>
