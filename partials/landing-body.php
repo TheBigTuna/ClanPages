@@ -1,4 +1,4 @@
-<?php include "nav0.php" ?>
+<?php include "nav-logged-out.php" ?>
 <?php include dirname(__FILE__) . "/../db_operations.php" ?>
 
 <div class="container jumbotron text-center mt-5">
