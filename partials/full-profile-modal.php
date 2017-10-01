@@ -19,12 +19,12 @@
 				</ul>
 			</div>
 			<div class="modal-footer justify-content-center">
-				<a href ="https://twitter.com/"><i class="fa fa-twitter circle text-primary"></i></a>
-				<a href ="https://www.facebook.com/"><i class="fa fa-facebook circle text-primary"></i></a>
-				<a href ="https://plus.google.com/"><i class="fa fa-google-plus circle text-primary"></i></a>
-				<a href ="https://dribbble.com/"><i class="fa fa-dribbble circle text-primary"></i></a>
-				<a href ="https://www.pinterest.com/"><i class="fa fa-pinterest circle text-primary"></i></a>
-				<a href ="https://www.youtube.com/"><i class="fa fa-youtube circle text-primary"></i></a>
+				<a href ="https://twitter.com/"><i class="fa fa-twitter circle text-muted"></i></a>
+				<a href ="https://www.facebook.com/"><i class="fa fa-facebook circle text-muted"></i></a>
+				<a href ="https://plus.google.com/"><i class="fa fa-google-plus circle text-muted"></i></a>
+				<a href ="https://dribbble.com/"><i class="fa fa-dribbble circle text-muted"></i></a>
+				<a href ="https://www.pinterest.com/"><i class="fa fa-pinterest circle text-muted"></i></a>
+				<a href ="https://www.youtube.com/"><i class="fa fa-youtube circle text-muted"></i></a>
 			</div>
 		</div><!--/.Content-->
 	</div>

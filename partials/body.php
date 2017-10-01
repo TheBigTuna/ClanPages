@@ -2,11 +2,7 @@
 <?php include dirname(__FILE__) . "/../db_operations.php" ?>
 
 <?php
-	$link = $_SERVER['PHP_SELF'];
-	$link_array = explode('/',$link);
-	$page = end($link_array);
-	$formattedPage = substr(strtolower($page), 0, strlen($page) - 4);
-	$current_clan = db_select("SELECT * FROM clans WHERE LOWER(clan_name)='" . $formattedPage . "'");
+	$current_clan = db_select("SELECT * FROM clans WHERE LOWER(clan_name)='" . $_GET['name'] . "'");
 ?>
 
 <div class="container jumbotron text-center">
@@ -45,11 +41,8 @@
 <div class="container">
 
 	<?php
-		$counter = 0;
-		$numOfCols = 3;
-		$rowCount = 0;
+		$result = db_select("SELECT u.*, m.* FROM users u JOIN user_clan_mapping m ON m.user_id = u.user_id WHERE m.clan_id='" . $current_clan[0]['clan_id'] . "'");
 
-		$result = db_select("SELECT * FROM users");
 		if ($result == false) {
 			$error = db_error();
 		}
@@ -77,11 +70,6 @@
 			<!-- col -->
 
 			<?php
-					$counter++;
-					$rowCount++;
-					if ($rowCount % $numOfCols == 0) {
-						echo ("</div><div class='row justify-content-center'>");
-					}
 			}}
 			?>
 

@@ -9,7 +9,7 @@
 		<div id="navbarNavDropdown" class="navbar-collapse collapse">
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item">
-					<a class="nav-link" href="">Create your Clan</a>
+					<a class="nav-link" href="create-clan.php">Create your Clan</a>
 				</li>
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="http://example.com"
