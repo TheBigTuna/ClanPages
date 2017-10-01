@@ -3,6 +3,9 @@
 
 <?php
 	$current_clan = db_select("SELECT * FROM clans WHERE LOWER(clan_name)='" . $_GET['name'] . "'");
+	if($_POST['temp']==='add-profile'){
+		$current_clan2 = db_select("SELECT * FROM clans WHERE LOWER(clan_name)='" . $_GET['name'] . "'");
+	}
 ?>
 
 <div class="container jumbotron text-center">
@@ -12,7 +15,7 @@
 		</div>
 		<h1 class="display-4 mt-3"><?php echo($current_clan[0]['clan_name'])?></h1>
 		<p class="lead"><?php echo($current_clan[0]['clan_description'])?></p>
-		<form action="">
+		<form action="clan_page.php/?temp=add-profile">
 			<button type="submit" class="btn btn-success btn-md">Add Your Profile</button>
 		</form>
 		<form method="" action="" class="mt-5">
