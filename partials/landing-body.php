@@ -1,3 +1,4 @@
+<?php include "nav0.php" ?>
 <div class="container jumbotron text-center mt-5">
 	<div class="">
 		<h1 class="display-3 mt-3 mb-4" style="font-size:3.65rem">Connect your community with ClanPages.</h1>
