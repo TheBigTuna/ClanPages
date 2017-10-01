@@ -4,7 +4,7 @@
 
 <body>
 
-	<?php include "partials/create-clan-form.php" ?>
+	<?php include "partials/landing-body.php" ?>
 	<?php include "partials/foot.php" ?>
 
 </body>
