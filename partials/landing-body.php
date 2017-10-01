@@ -40,7 +40,7 @@
 		{
 		foreach($result as $row) { ?>
 			<div class="col-lg-4 col-md-12 profile-col">
-				<div class="media" data-toggle="" data-target="<?php echo(strtolower($row['clan_name'])) ?> ".".php">
+				<div class="media" data-toggle="" data-target="<?php echo(strtolower($row['clan_name'])) ?>.php">
 					<img class="d-flex align-self-center mr-3 rounded" width="80" height="80"
 						src="<?php echo($row['clan_logo'])?>"
 						alt="Generic placeholder image">
