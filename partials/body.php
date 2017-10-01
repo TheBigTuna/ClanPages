@@ -12,7 +12,7 @@
 <div class="container jumbotron text-center">
 	<div class="">
 		<div class="text-center">
-			<img src="http://lorempixel.com/100/100/" width="100px" height="100px" class="rounded" alt="">
+			<img src="<?php echo($current_clan[0]['clan_logo'])?>" width="120px" height="120px" class="rounded" alt="">
 		</div>
 		<h1 class="display-4 mt-3"><?php echo($current_clan[0]['clan_name'])?></h1>
 		<p class="lead">Add your profile and get to know your fellow international students at Oakland University.</p>
