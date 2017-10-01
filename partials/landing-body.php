@@ -40,15 +40,15 @@
 		{
 		foreach($result as $row) { ?>
 			<div class="col-lg-4 col-md-12 profile-col">
-				<div class="media" data-toggle="" data-target="">
+				<div class="media" data-toggle="" data-target="<?php echo(strtolower($row['clan_name'])) ?>".".php">
 					<img class="d-flex align-self-center mr-3 rounded" width="80" height="80"
 						src="<?php echo($row['clan_logo'])?>"
 						alt="Generic placeholder image">
 					<div class="media-body">
 						<h5 class="mt-2 mb-2"><?php echo($row['clan_name']) ?></h5>
 						<h6 class="mb-0"><?php echo($row['clan_description']) ?></h6>
-						<a href="<?php echo(strtolower($row['clan_name'])) ?>".".php" class="pull-right" style="font-size: 0.8rem;">More
-							Info &rarr;</a>
+						<!-- <a href="<?php //echo(strtolower($row['clan_name'])) ?>".".php" class="pull-right" style="font-size: 0.8rem;">More
+							Info &rarr;</a>-->
 					</div>
 					<!-- media-body -->
 				</div>
