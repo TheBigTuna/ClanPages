@@ -6,8 +6,8 @@
 <!-- Fontawesome -->
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" />
 
-<link href="../assets/css/enhanced-modals.min.css" rel="stylesheet" />
+<link href="assets/css/enhanced-modals.min.css" rel="stylesheet" />
 
-<link href="../assets/css/style.css" rel="stylesheet" />
+<link href="assets/css/style.css" rel="stylesheet" />
 
 </head>

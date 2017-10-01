@@ -11,15 +11,10 @@
         <link href="css/style.css" rel="stylesheet">
     </head>
     <body>
-    
 
-           
+
+
     <!--Modal -->
-
-
- 
-
-
 
 <div class="container">
   <h2>Modal</h2>
@@ -29,7 +24,7 @@
   <!-- Modal -->
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
-    
+
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
@@ -39,14 +34,14 @@
         <div class="modal-body">
 
 
-            
+
     <!--Sign Up-->
                 <h3>email:</h3><form action="#" method="post"> <input name="email" id = 'emailSu' type="email" maxlength="50"  placeholder="Email">
                 <h3>password:</h3><form action="#" method="post"> <input name="password" id = 'passwordSu' type="password" maxlength="20"  placeholder="Password">
                 <h3>confirm-password:</h3><form action="#" method="post"> <input name="password" id = 'confirm' type="password" maxlength="20"  placeholder="Confirm Password">
                 <button input type="submit" name="submit" value="submit">Sign Up</button>
                     </form>
-                    
+
 
 
 
@@ -55,10 +50,10 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
         </div>
       </div>
-      
+
     </div>
   </div>
-  
+
 </div>
 
 
@@ -71,7 +66,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
     //prevent the normal submission of the form
     e.preventDefault();
 
-    console.log('Email:' + ' ' + emailSuInput.value);    
+    console.log('Email:' + ' ' + emailSuInput.value);
 });
 
 
@@ -84,7 +79,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
     //prevent the normal submission of the form
     e.preventDefault();
 
-    console.log('Password:' + ' ' + passwordSuInput.value);    
+    console.log('Password:' + ' ' + passwordSuInput.value);
 });
 
             // Sign Up confirm-password
@@ -95,7 +90,7 @@ document.querySelector('form').addEventListener('submit', function (e) {
     //prevent the normal submission of the form
     e.preventDefault();
 
-    console.log('Confirm Password:' + ' ' + confirmInput.value);    
+    console.log('Confirm Password:' + ' ' + confirmInput.value);
 });
 
 

@@ -1,10 +1,14 @@
 <?php include "nav-logged-out.php" ?>
-<?php include dirname(__FILE__) . "/../db_operations.php" ?>
+<?php
+	if (!function_exists("db_query")) {
+		include dirname(__FILE__) . "/../db_operations.php";
+	}
+	?>
 
 <div class="container jumbotron text-center mt-5">
 	<div class="">
-		<h1 class="display-3 mt-0 mb-4" style="font-size:3.65rem;margin-top:-.5rem !important">Connect your community with ClanPages.</h1>
-		<form action="/create-clan.php">
+		<h1 class="display-3 mt-0 mb-4" style="font-size:3.65rem;margin-top:-.5rem !important">Get your community connected.</h1>
+		<form action="create-clan.php">
 			<button type="submit" class="btn btn-success btn-lg">Create Your ClanPage</button>
 		</form>
 		<form method="" action="" class="mt-5">
@@ -40,7 +44,7 @@
 		{
 			foreach($result as $row) { ?>
 				<div class="col-lg-4 col-md-12 profile-col">
-					<a href="<?php echo(strtolower($row['clan_name'])) ?>.php">
+					<a href="clan_page.php?name=<?php echo(strtolower($row['clan_name'])) ?>">
 						<div class="media" data-toggle="" data-target="">
 							<img class="d-flex align-self-center mr-3 rounded" width="80" height="80"
 							src="<?php echo($row['clan_logo'])?>"
