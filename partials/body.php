@@ -4,16 +4,17 @@
 <?php
 	$link = $_SERVER['PHP_SELF'];
 	$link_array = explode('/',$link);
-	echo $page = end($link_array);
-	$result = db_select("SELECT clan_name FROM clans WHERE clan_name=")
+	$page = end($link_array);
+	$formattedPage = substr(strtolower($page), 0, strlen($page) - 4);
+	$current_clan = db_select("SELECT * FROM clans WHERE LOWER(clan_name)='" . $formattedPage . "'");
 ?>
 
 <div class="container jumbotron text-center">
 	<div class="">
 		<div class="text-center">
-			<img src="http://lorempixel.com/100/100/" class="rounded" alt="">
+			<img src="http://lorempixel.com/100/100/" width="100px" height="100px" class="rounded" alt="">
 		</div>
-		<h1 class="display-4 mt-3">Oakland University Intl. Students</h1>
+		<h1 class="display-4 mt-3"><?php echo($current_clan[0]['clan_name'])?></h1>
 		<p class="lead">Add your profile and get to know your fellow international students at Oakland University.</p>
 		<form method="" action="" class="mt-5">
 			<div class="row justify-content-md-center">
@@ -50,7 +51,7 @@
 
 		$result = db_select("SELECT * FROM users");
 		if ($result == false) {
-			//$error = db_error();
+			$error = db_error();
 		}
 	?>
 
