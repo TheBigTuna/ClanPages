@@ -59,8 +59,8 @@
 		foreach($result as $row) { ?>
 			<div class="col-lg-4 col-md-12 profile-col">
 				<div class="media" data-toggle="modal" data-target="#basicExample">
-					<img class="d-flex align-self-center mr-3 rounded"
-						src="../../<?php echo($row['user_profile_url'])?>"
+					<img class="d-flex align-self-center mr-3 rounded" width="80px" height="80px"
+						src= "<?php echo($row['user_profile_url'])?>"
 						alt="Generic placeholder image">
 					<div class="media-body">
 						<h5 class="mt-2 mb-2"><?php echo($row['user_name']) ?></h5>
