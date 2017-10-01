@@ -50,7 +50,6 @@
             $tempArray = $row;
             array_push($resultArray, $tempArray);
         }
-        echo($resultArray);
         return $resultArray;
     }
 
