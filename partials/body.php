@@ -12,6 +12,9 @@
 		</div>
 		<h1 class="display-4 mt-3"><?php echo($current_clan[0]['clan_name'])?></h1>
 		<p class="lead"><?php echo($current_clan[0]['clan_description'])?></p>
+		<form action="">
+			<button type="submit" class="btn btn-success btn-md">Add Your Profile</button>
+		</form>
 		<form method="" action="" class="mt-5">
 			<div class="row justify-content-md-center">
 				<div class="col-sm-6">
