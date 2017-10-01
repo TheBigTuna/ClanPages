@@ -68,8 +68,6 @@
 						<h5 class="mt-2 mb-2"><?php echo($row['user_name']) ?></h5>
 						<h6><?php echo($row['user_location']) ?></h6>
 						<h6 class="mb-0"><?php echo($row['user_major']) ?></h6>
-						<a href="#" class="pull-right" style="font-size: 0.8rem;">More
-							Info &rarr;</a>
 					</div>
 					<!-- media-body -->
 				</div>
