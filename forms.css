@@ -1,0 +1,51 @@
+input{
+display: block;  
+margin-left: -3vw;
+font-size: 1.3vw;
+width: 45vw;
+padding: 1vw;
+color: white;
+margin-top: 3vw;
+font-family: Avenir,sans-serif;
+letter-spacing: 1px;
+background-color: lightgray;
+border: 1px solid black;
+
+
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: black;
+	opacity: 1;
+}
+button{
+    display: block;
+    cursor: pointer;
+    font-family: Avenir,sans-serif;
+    font-size: 1vw;
+	font-weight: bold;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 1vw;
+	margin-top: 2vw;
+    width: 17vw;
+    height: 3.1vw;
+    letter-spacing: 1px;
+	border-radius: 10%;
+
+}
+
+button:hover{
+   border: .1px solid black;
+
+}
+
+.left-side{
+    width: 45%;
+    background-color: gray;
+    margin-top: 4vw;
+    padding-bottom: 5vw;
+
+}
+
+
