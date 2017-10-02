@@ -14,7 +14,7 @@
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" href="http://example.com"
 					id="navbarDropdownMenuLink" data-toggle="dropdown"
-					aria-haspopup="true" aria-expanded="false"> Name Lastname </a>
+					aria-haspopup="true" aria-expanded="false"> Nick Holbrook </a>
 					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 						<a class="dropdown-item" href="#">Edit Profile</a>
 						<a class="dropdown-item" href="#">Settings & Privacy</a>
