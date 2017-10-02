@@ -1,5 +1,5 @@
 ## ClanPages
-A little info about your project and/ or overview that explains **what** the project is about.
+Project for **Grizz**Hacks**2**
 
 ## Problem
 When attending an event or joining a community, club or meet up group it is hard to get to know everyone, remember their names or connect with them later. The only ways to connect available right now are finding each other on facebook or other social networks or exchanging cards that more often than not get lost or are rarely ever referred to again.
