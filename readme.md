@@ -1,5 +1,5 @@
 ## ClanPages
-Project for **Grizz**Hacks**2**
+Project for **Grizz**Hacks**2**.
 
 ## Problem
 When attending an event or joining a community, club or meet up group it is hard to get to know everyone, remember their names or connect with them later. The only ways to connect available right now are finding each other on facebook or other social networks or exchanging cards that more often than not get lost or are rarely ever referred to again.
@@ -11,7 +11,7 @@ ClanPages provides community/group leaders, event organizers or anyone an easy w
 Right now, we've only built a simple php+mysql web app as a way to demonstrate the concept. We plan to rewrite the whole thing with a lot more pre-planning and scalable & secure code.
 
 ## Web Technologies
-PHP, HTML5, CSS3, Javascript, jQuery, Bootstrap, MySql, PhpMyadmin
+PHP, HTML5, CSS3, Javascript, jQuery, Bootstrap, MySQL, PhpMyadmin
 
 ## Challenges
 We started off with a java web app but quickly realized that java is not the best language for a hackathon project. We then decided to move to LAMP web stack and finish it from there.
@@ -22,4 +22,4 @@ We were able to put together a simple but polished UI and get everyone on the sa
 ## Code Example
 Show what the library does as concisely as possible, developers should be able to figure out **how** your project solves their problem by looking at the code example. Make sure the API you are showing off is obvious, and that your code is short and concise.
 
-MIT © [ndh175]()
+© [ndh175]()
